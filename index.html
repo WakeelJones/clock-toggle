@@ -1,24 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>JavaScript Clock UI Dark</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Website Title -->
+    <title>Wakeel Jones - Professional web designer and developer</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font-Awesome -->
+    <link
+      href="assets/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Lightbox -->
+    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />
+    <!-- Text Rotator-->
+    <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet" />
+    <!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet" />
+    <!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Custom Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/html5shiv/html5shiv.js"></script>
+      <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <body>
-    <div class="clock">
-      <div class="hour">
-        <div class="hr" id="hr"></div>
+  <body id="top">
+    <!-- ****************************** Preloader ************************** -->
+    <div id="preloader"></div>
+
+    <!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+    <header id="home">
+      <!-- creative menu -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="menu-wrap">
+            <nav class="menu">
+              <!-- Menu Links -->
+              <div class="icon-list">
+                <a href="index.html#home"
+                  ><i class="fa fa-fw fa-home"></i><span>Home</span></a
+                >
+                <a href="index.html#about"
+                  ><i class="fa fa-fw fa-quote-left"></i><span>About</span></a
+                >
+                <a href="index.html#service"
+                  ><i class="fa fa-fw fa-globe"></i><span>Service</span></a
+                >
+                <a href="index.html#portfolio"
+                  ><i class="fa fa-fw fa-picture-o"></i
+                  ><span>Portfolio</span></a
+                >
+                <a href="index.html#contact"
+                  ><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a
+                >
+              </div>
+            </nav>
+          </div>
+          <button class="menu-button" id="open-button"></button
+          ><!-- menu button -->
+        </div>
+        <!--/row-->
       </div>
-      <div class="min">
-        <div class="mn" id="mn"></div>
+      <!--/container-->
+      <!-- Header Image -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <!-- Slider Button (don't edit!)-->
+          <div class="row">
+            <div class="col-md-12 text-right navicon">
+              <a id="nav-toggle" class="nav_slide_button" href="index.html#"
+                ><span></span
+              ></a>
+            </div>
+          </div>
+          <!-- HEADER HEADLINE -->
+          <div class="row">
+            <div class="col-md-8 col-md-offset-1 inner">
+              <h1 class="animated fadeInDown">
+                Wa<span style="color: #e04343">k</span>eel<br />
+                <span>jo<span style="color: #ffe800">n</span>es</span>
+              </h1>
+              <!-- Title -->
+              <h3 class="animated fadeInUp delay-05s">
+                <span class="rotate">Web Designer, Web Developer</span>
+              </h3>
+              <!-- Text Rotator -->
+            </div>
+          </div>
+          <!-- Learn More Button -->
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <a href="index.html#about" class="scrollto wow fadeInUp delay-5s">
+                <p>SEE MORE</p>
+                <p class="scrollto--arrow">
+                  <img src="img/scroll-down.png" alt="scroll down arrow" />
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Header Image End -->
+    </header>
+    <!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
+
+    <!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
+    <section class="intro text-center section-padding color-bg" id="about">
+      <div class="container">
+        <!-- WELCOME TEXT -->
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 wp1">
+            <h1 class="arrow">A little <span>about</span> me</h1>
+            <!-- Headline -->
+            <!-- about / welcome text -->
+            <p>
+              Hello, my name is Wakeel. I'm a front-end engineer with experience
+              in Python, JavaScript, Node JS, MySQL, MongoDB, and React. My
+              dream is to one day start my own business and become an
+              entrepreneur (currently working on some ideas). I'm constantly
+              learning new things. those things include gaining more experience
+              with MongoDB, React and Node JS My latest project, Github Finder,
+              is a search engine for Github. You can check it out , or on the
+              homepage. It is built with React, MongoDB and Node JS. More About
+              me on .
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="sec">
-        <div class="sc" id="sc"></div>
+    </section>
+
+    <!-- ==========================
+        SERVICE SECTION 
+        =========================== -->
+    <section class="features text-center section-padding" id="service">
+      <div class="container">
+        <!-- Headline -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="arrow">I do amazing things for clients</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="services">
+              <!-- Service Box 1 -->
+              <div class="col-md-4 wp2 item">
+                <div class="icon">
+                  <i class="fa fa-wordpress"></i
+                  ><!-- Icon -->
+                </div>
+                <h2>Wordpress</h2>
+                <!-- Title -->
+                <p>
+                  WordPress is a free, open-source website creation platform. On
+                  a more technical level, WordPress is a content management
+                  system (CMS) written in PHP that uses a MySQL database. In
+                  non-geek speak, WordPress is the easiest and most powerful
+                  blogging and website builder in existence today.
+                </p>
+                <!-- Description -->
+              </div>
+              <!-- Service Box 2 -->
+              <div class="col-md-4 wp2 item delay-05s">
+                <div class="icon">
+                  <i class="fa fa-desktop"></i
+                  ><!-- Icon -->
+                </div>
+                <h2>Web Designer</h2>
+                <!-- Title -->
+                <p>
+                  Web designers plan, create and code internet sites and web
+                  pages, many of which combine text with sounds, pictures,
+                  graphics and video clips. A web designer is responsible for
+                  creating the design and layout of a website or web pages.
+                </p>
+                <!-- Description -->
+              </div>
+              <!-- Service Box 3 -->
+              <div class="col-md-4 wp2 item delay-1s">
+                <div class="icon">
+                  <i class="fa fa-code"></i
+                  ><!-- Icon -->
+                </div>
+                <h2>Development</h2>
+                <!-- Title -->
+                <p>
+                  Web development refers to building, creating, and an
+                  maintaining websites. It includes aspects such as web design,
+                  web publishing, web programming, and database management.
+                  These tools make it easy for anyone to create and edit their
+                  own website using a web-based interface.
+                </p>
+                <!-- Description -->
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid">
+      <!-- About 1 -->
+      <div class="row color-bg">
+        <div class="col-md-6 nopadding features-intro-img">
+          <div
+            class="about-image"
+          >More <span class="ab">About</span> <span class="mwj">Me</span></div>
+          <!-- about image 1 -->
+        </div>
+        <div class="col-md-6 about-text">
+          <h6>More About Myself</h6>
+          <!-- headline-->
+          <p>
+            Full Name: Mogamat Wakeel Jones<br/>
+
+Date of Birth:  23 February 1999<br/>
+
+Gender: Male<br/>
+
+Location (suburb): Mitchell’s Plain<br/>
+
+Nationality (or legal status in this country): South Africa<br/>
+
+Willing to relocate (Yes/No – Then where Johannesburg, Pretoria or Durban): NO<br/>
+
+Any type of criminal record: No<br/>
+
+Are you blacklisted or do you have any credit issues? : No
+          </p>
+        </div>
+      </div>
+      <!-- About 2 -->
+      <div class="row">
+        <div class="col-md-6 about-text">
+          <h6>Student Bio</h6>
+          <!-- Headline -->
+          <p>
+            I am a creative, committed and business-minded individual. I believe that discipline in one’s approach to all one challenges is key to success. I am a family man and believe that family comes first.<br/>
+            I built my first basic website by the age of 20 and I have never looked back. I realized then that I had a passion for developments and started to learn basics in HTML and CSS.<br/>
+            Hobbies: Swimming, Rugby, Soccer, 
+
+Coding, 
+
+Music, 
+
+Gaming.<br/>
+
+Matric (year and school): 2017 - Pelican Park High
+
+
+          </p>
+        </div>
+        <div class="col-md-6 nopadding features-intro-img">
+          <div
+            class="about-image1"
+          ><span class="edu">Edu</span>cat<span class="wj">ion</span></div>
+          <!-- about image 2 -->
+        </div>
+      </div>
+      <!-- About 3 -->
+      <div class="row color-bg">
+        <div class="col-md-6 nopadding features-intro-img">
+          <div
+            class="about-image"
+          ><span class="wj">Work</span> Exper<span class="mwj">ien</span>ce</div>
+          <!-- about image 3 -->
+        </div>
+        <div class="col-md-6 about-text">
+          <h6>Work Experience </h6>
+          <!-- Headline-->
+          <p>
+            Company: Pick N Pay<br/>
+
+Period: 7 months<br/>
+
+Role: Shelf packer<br/>
+
+merchandising<br/>
+
+filling shelves<br/>
+
+Off Loading Stock<br/>
+          </p>
+        </div>
       </div>
     </div>
-    <div class="toggleClass" onclick="toggleClass()"></div>
+    <!-- ==========================
+        ABOUT SECTION END
+        =========================== -->
+
+    <!-- ==========================
+        PORTFOLIO SECTION
+    =========================== -->
+    <section class="swag text-center" id="portfolio">
+      <div class="container">
+        <!-- Headline -->
+        <div class="row">
+          <h1 class="arrow">Recent <span>Projects</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="cards">
+      <div class="card card1">
+        <div class="container4">
+          <img src="./img/portfolio/github-finder.png" alt="Github-Finder" />
+        </div>
+        <div class="details">
+          <h3>Github Finder</h3>
+          <p>Github Finder Made with React.js and Api</p>
+          <a href="https://admiring-pike-ff7797.netlify.app" target="blank" class="btn1">View Live</a>
+          <a href="https://github.com/WakeelJones/github-finder" target="blank" class="github">Repository</a>
+        </div>
+      </div>
+      <div class="card card2">
+          <div class="container4">
+            <img src="./img/portfolio/instagram.png" alt="instagram-clone" />
+          </div>
+          <div class="details">
+            <h3>Instagram-Clone</h3>
+            <p>This was created with react and firebase</p>
+            <a href="https://instagram-clone-ac.netlify.app" target="blank" class="btn1">View Live</a>
+            <a href="https://github.com/WakeelJones/InstaClone" target="blank" class="github">Repository</a>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="container4">
+            <img src="./img/portfolio/angrycreative-covidtracker-netlify-app-1024x768desktop-b91768.png" alt="covid-19 tracker" />
+          </div>
+          <div class="details">
+            <h3>Covid-19 Tracker</h3>
+            <p>This webapp was created with react.js</p>
+            <a href="https://angrycreative-covidtracker.netlify.app" target="blank" class="btn1">View Live</a>
+            <a href="https://github.com/WakeelJones/Covid-19-Tracker" target="blank" class="github">Repository</a>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="container4">
+            <img src="./img/portfolio/portfolio.png" alt="portfolio" />
+          </div>
+          <div class="details">
+            <h3>Portfolio</h3>
+            <p>This webapp was created with react.js</p>
+            <a href="https://porfolio-ac.netlify.app/" target="blank" class="btn1">View Live</a>
+            <a href="https://github.com/WakeelJones/wakeelJones.github.io" target="blank" class="github">Repository</a>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="container4">
+            <img src="./img/dev-lifechoicesacademy-com-1024x768desktop-8762e6.png" alt="HCI" />
+          </div>
+          <div class="details">
+            <h3>HCI Foundation</h3>
+            <p>This was created with Wordpress</p>
+            <a href="https://dev.lifechoicesacademy.com/" target="blank" class="btn2">View Live</a>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="container4">
+            <img src="./img/blissful-bartik-433af0-netlify-app.png" alt="portfolio" />
+          </div>
+          <div class="details">
+            <h3>Portfolio 2021</h3>
+            <p>First 2021 Portfolio</p>
+            <a href="https://blissful-bartik-433af0.netlify.app" target="blank" class="btn1">View Live</a>
+            <a href="https://github.com/WakeelJones/Html-Portfolio" target="blank" class="github">Repository</a>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="container4">
+            <img src="./img/kingjameschallenge-netlify-app-1024x768desktop-1d77e3.png" alt="King James Challenge" />
+          </div>
+          <div class="details">
+            <h3>King James Challenge</h3>
+            <p>Practice Challenge</p>
+            <a href="https://kingjameschallenge.netlify.app/#" target="blank" class="btn1">View Live</a>
+            <a href="https://github.com/WakeelJones/kingjamesChallenge" target="blank" class="github">Repository</a>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="container4">
+            <img src="./img/clock-toggle-netlify-app-1024x768desktop-172ab9.png" alt="clock-toggle" />
+          </div>
+          <div class="details">
+            <h3>King James Challenge</h3>
+            <p>Practice Challenge</p>
+            <a href="https://clock-toggle.netlify.app/" target="blank" class="btn1">View Live</a>
+            <a href="https://github.com/WakeelJones/clock-toggle" target="blank" class="github">Repository</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--/row-->
+    </div>
+    <!--/.container-->
+    <!-- ==========================
+        PORTFOLIO SECTION END
+        =========================== -->
+
+    <!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+    <div class="spacer-cta text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="index.html#contact" class="outline-btn">hire Wakeel Jones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->
+
+    <!-- ==========================
+        CLIENT SECTION 
+        =========================== -->
+    <div class="container-fluid">
+      <div class="row color-bg">
+        <!-- Left Image -->
+        <div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
+          <div
+            class="about-image2"
+            style="background-image: url(img/updated.jpg)"
+          ></div>
+        </div>
+        <!-- Clients / Testimonials -->
+        <div class="col-md-6 nopadding about-text">
+          <h6>What They Say About Me</h6>
+          <div id="clientSlider">
+            <ul class="slides">
+              <li>
+                <p>
+                  Wakeel is a great Developer with his own unique touch and would be an asset to any company looking for one heck of a developer. <br />
+                  <small>- BRITNEY BOWERS, Peer.</small>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Wakeel has shown strong skills in development, and a keen interest in programming. He dives headfirst into projects, which he has shown a passion for.
+
+<br />
+                  <small>- JASON WANDRAG
+                    , Group Lecturer.</small>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Wakeel is an individual who knows and understand coding . He is extremely passionate about coding especially frontend development and its always been a dream of his to pursue his career in this field . Wakeel will be beneficial to any company as he is a hardworking individual and always give his best .<br />
+                  <small>-JOSHUA DAVIDS, Peer.</small>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================
+        CLIENTS SECTION END
+        =========================== -->
+
+    <!-- ==========================
+        NEWSLETTER SECTION 
+        =========================== -->
+    <section>
+      <div class="container-fluid">
+        <div class="row color-bg">
+          <div class="col-md-6 nopadding subscribe text-center">
+            <h1>
+              <i class="fa fa-paper-plane"></i
+              ><span>Download My CV</span>
+            </h1>
+            <!-- Heading -->
+            <a href="./cv/Curriculum Vitae of MWJ-converted.pdf" class="btn1" download="Curricullum Vitae">Download</a>
+          </div>
+          <div class="col-md-6 nopadding features-intro-img">
+            <div
+              class="about-image2"
+              style="background-image: url(img/abstract-2468874_1920.jpg)"
+              
+            ></div>
+            <!-- Right Image -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================
+        NEWSLETTER SECTION END
+        =========================== -->
+
+    <!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+    <section class="text-center section-padding contact-wrap" id="contact">
+      <!-- To Top Button -->
+      <a href="index.html#top" class="up-btn"
+        ><i class="fa fa-chevron-up"></i
+      ></a>
+      <div class="container">
+        <!-- Headline -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="arrow">Drop <span>me</span> a line</h1>
+          </div>
+        </div>
+        <div class="row contact-details">
+          <!-- Adress Box -->
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+              <p>11 Bristol Close, Rocklands</p>
+            </div>
+          </div>
+          <!-- Phone Number Box -->
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+              <p>+27 81 470 7871</p>
+            </div>
+          </div>
+          <!-- E-Mail Box -->
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+              <p><a href="index.html#">wakeeljones29@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Google Maps (Change your Settings below) -->
+          <div class="col-md-6">
+            <div id="googlemaps"></div>
+          </div>
+          <!-- Contact Form -->
+          <div class="col-md-6 contact">
+            <form role="form">
+              <!-- Name -->
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- E-Mail -->
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your name"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- Phone Number -->
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Message Area -->
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  placeholder="Write you message here..."
+                  style="height: 232px"
+                ></textarea>
+              </div>
+              <!-- Subtmit Button -->
+              <button type="submit" class="btn btn-send">Send message</button>
+            </form>
+          </div>
+        </div>
+        <br />
+        <!-- Social Buttons - use font-awesome, past in what you want -->
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="social-buttons">
+              <li>
+                <a href="https://twitter.com/wakeeljones" target="blank" class="social-btn"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <!-- twitter -->
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100008464240624" target="blank" class="social-btn"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <!-- facebook -->
+              <li>
+                <a href="https://www.linkedin.com/in/wakeel-jones-3b0036157/" target="blank" class="social-btn"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <!--LinkedIn-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
+
+    <!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              All Rights Reserved. &copy; <script>
+              document.write(new Date().getFullYear());
+              </script>
+              
+              <a href="https://blissful-bartik-433af0.netlify.app">Wakeel Jones</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==========================
+        FOOTER SECTION END
+        =========================== -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->
+    <script
+      type="text/javascript"
+      src="assets/smoothscroll/smoothscroll.js"
+    ></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+    <script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+    <!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+    <!-- Text Rotator -->
+    <script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+    <!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+    <!-- Google Maps -->
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"
+    ></script>
+    <!-- Theme JavaScript Core -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- GOOGLE MAPS DATA -->
+    <script type="text/javascript">
+      // When the window has finished loading create our google map below
+      google.maps.event.addDomListener(window, "load", init);
+
+      function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(-34.06441849672821, 18.606384126747724), // Mitchell's Plain
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [
+            {
+              featureType: "water",
+              stylers: [{ color: "#F2F2F2" }, { visibility: "on" }],
+            },
+            { featureType: "landscape", stylers: [{ color: "#FFFFFF" }] },
+            {
+              featureType: "road",
+              stylers: [{ saturation: -100 }, { lightness: 45 }],
+            },
+            {
+              featureType: "road.highway",
+              stylers: [{ visibility: "simplified" }],
+            },
+            {
+              featureType: "road.arterial",
+              elementType: "labels.icon",
+              stylers: [{ visibility: "off" }],
+            },
+            {
+              featureType: "administrative",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#ADADAD" }],
+            },
+            { featureType: "transit", stylers: [{ visibility: "off" }] },
+            { featureType: "poi", stylers: [{ visibility: "off" }] },
+          ],
+        };
+
+        // Get the HTML DOM element that will contain your map
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById("googlemaps");
+
+        // Create the Google Map using out element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+      }
+    </script>
+
+    <!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+      $(".rotate").textrotator({
+        animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+        separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+        speed: 2000, // How many milliseconds until the next word show.
+      });
+    </script>
   </body>
-  <script src="./main.js"></script>
 </html>
